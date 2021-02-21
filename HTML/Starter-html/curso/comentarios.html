@@ -387,4 +387,168 @@ Atributos HTML
       - relativo à página aberta no momento 
       - apontará para lugares diferentes 
   -->
+<!--
+    Table 
 
+    Prós 
+    - Visualização de dados via linhas e colunas.
+    - Boa acessibilidade para leitura dos dados.
+
+    Contras 
+    - Pouco flexivel
+    - Precisa de estilização para melhor visualização
+
+    Não usar 
+    - Para criar layout 
+
+<table>
+
+  <caption>Pessoas por idade</caption>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+    </tr>
+
+
+  </thead>
+
+<tbody>
+  <tr>
+    <td>Gaby</td>
+    <td>28</td>
+  </tr>
+
+  <tr>
+    <td>Maria</td>
+    <td>45</td>
+  </tr>
+
+
+</tbody>
+
+<tfoot>
+  <tr>
+    <td>Total:</td>
+    <td>2 pessoas</td>
+  </tr>
+
+</tfoot>
+
+  
+
+</table>
+
+
+-->
+<!--
+  2 lojas
+
+    Quantos produtos foram produzidos, quantos
+    vedidos e agrupados por nome dos produtos
+
+<table>
+  <caption>Produtos Produzidos X Vendidos por Loja</caption>
+
+  <colgroup>
+    <col>
+    <col span="2"style="background-color:blueviolet">
+    <col span="2"style="background-color:cornflowerblue">
+  
+  
+  </colgroup>
+
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="2" scope="colgroup">Afonso Pena</th>
+      <th colspan="2" scope="colgroup">Antonia Pereira</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Produzidos</th>
+      <th scope="col">Vendidos</th>
+      <th scope="col">Produzidos</th>
+      <th scope="col">Vendidos</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <th scope="row">Vassoura</th>
+      <td>50</td>
+      <td>30</td>
+      <td>20</td>
+      <td>20</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Baldes</th>
+      <td>10</td>
+      <td>10</td>
+      <td>30</td>
+      <td>25</td>
+    </tr>
+
+
+  </tbody>
+
+</table>
+
+
+-->
+
+<!--
+  <head> não é visivel no navegador mas serve para configurações 
+
+      <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+-->
+
+<!--
+  
+  <meta>
+
+  atributos 
+  - charset
+  - name
+  -content
+
+  <head>
+  codificação de caracteres especiais
+  <meta charset="UTF-8">
+
+  portabilidade para dispositivos mobile
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+
+-->
+<!--
+<link> para icones personalizados
+
+-->
+
+<!--
+  <meta>
+  - charset
+  - viewport
+  - author
+  - description
+  - robots
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Gabys">
+  <meta name="description" content="Um website para iniciantes em programação">
+  <meta name="robots" content="noindex nofollow">
+  <title>Document</title>
+</head>
+
+-->
