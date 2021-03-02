@@ -1,0 +1,83 @@
+Aula 1 - Primeiros Passos {
+   
+  # A importancia da Sintaxe
+    * Toda linguagem tem
+    * Uma boa comunicação necessita de uma boa Sintaxe
+    * 82% dos erros para iniciantes de programação;
+
+  # Como executar o JavaScript 
+    * F12 => Console 
+    * CodePen 
+    * Vsc (Visual Studio Code)
+
+  #console.log('Bem vindo ao Starter')
+    * Mostrar algo em tela 
+
+  # Criar comentarios 
+    // comentarios em linha 
+    /*
+    comentario em bloco 
+    */
+}
+ 
+Aula 2 - Tipos de dados { 
+
+  Introdução {
+    # Tipos de dados 
+
+      * Gramatica
+        - Elementos da linguagem e suas combinações
+        - A arte de falar e escrever corretamente 
+      
+      * Vocabulário
+        - Conjunto de termos e expressões 
+        - Agrupamento de palavras
+
+      * Precisamos saber como escrever 
+      * Precisamos saber os significados 
+      * Precisamos continuar aprendendo, crescer nosso vocabulário.
+
+    ## Como vai ser a dinamica do aprendizado?
+
+      * Conceito e escrita 
+        
+        > Vamos aprender os tipos de dados mais utilizados na linguagem 
+          * Você sabia que é possível aprender 80% de uma lingua nova, com cerca de 20% do vocabulário? (até mesmo);
+  }
+  String {
+    
+    * Cadeia de caracteres 
+      
+      "" // aspas duplas 
+      '' // aspas simples 
+      `` // template literals ou template strings
+      * interpulação
+  }
+  Number {
+    * numeros 
+
+      33 // interios 
+      12.5 // reais 
+      NaN // Not a Number 
+      Infinity // infinito
+  }
+  Boolean {
+    * Somente 2 valores 
+      true // verdadeiro
+      false // falso
+  }
+  Undefined vs null {
+    * Undefined = indefinido 
+    * Null 
+      - nulo
+      - Objeto que não possui nada dentro
+      - diferente de indefinido
+    }
+  Undefined vs null {
+    * Undefined = indefinido 
+    * Null 
+      - nulo
+      - Objeto que não possui nada dentro
+      - diferente de indefinido
+    }
+}
