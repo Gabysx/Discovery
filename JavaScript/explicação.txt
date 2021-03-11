@@ -22,6 +22,40 @@ Aula 1 - Primeiros Passos {
  
 Aula 2 - Tipos de dados { 
 
+  JavaScript é orientado a objeto 
+
+  Conforme o ECMAScript standart temos 9 tipos de dados:
+
+    * Data types {
+      - Primitive/ Primitive value
+      - Structural
+      - Structural Primitive
+    }
+
+    * Primitivos {
+      - String
+      - Number
+      - Boolean
+      - Undefined
+      - Symbol
+      - BigInt
+    } 
+
+    * Estruturais {
+        # Object 
+          - Array 
+          - Map
+          - Set
+          - Date
+          - ...
+
+        # Function
+    }
+
+    * Primitivo Estrutural / Structural Root Primitive{
+      - Null 
+    } 
+      
   Introdução {
     # Tipos de dados 
 
@@ -72,12 +106,74 @@ Aula 2 - Tipos de dados {
       - nulo
       - Objeto que não possui nada dentro
       - diferente de indefinido
-    }
-  Undefined vs null {
-    * Undefined = indefinido 
-    * Null 
-      - nulo
-      - Objeto que não possui nada dentro
-      - diferente de indefinido
-    }
+  }
+  Object {
+    * Objeto
+    * Propriedades / Atributos
+    * Funcionalidade / Métodos 
+
+      { propriedades: "valor"}
+
+      console.log({
+        name:"Gaby",
+        idade: 36,
+        andar: function(){
+          console.log('andar')
+        }
+      })
+  }
+  Array (vetores) {
+    * Uma Lista 
+    * Agrupamento
+
+    ["Gaby", 36]
+  }
+}
+
+Aula 3 - Variáveis {
+  
+  * Variáveis {
+    - Nomes simbólicos para receber algum valor 
+    - Atalhos de código
+    - Identificadores 
+    - 3 palavras reservadas para criar uma variável 
+        * var {
+            var clima = "Quente"
+              clima = "frio"
+                console.log(clima)
+          }
+        * let {
+            let clima = "Quente"
+              clima = "frio"
+                console.log(clima)
+          }
+        * const {
+            - const - Não pode mudar o seu valor durante a aplicação
+                
+                const clima = "Quente"
+                  console.log(clima)
+            }
+  }
+
+  * Tipos dinâmicos {
+    - O Js é uma linguagem fracamente tipada e dinamica;
+    - Variáveis não precisam ter um tipo previamente definido (typeof)
+    - Podemos mudar o conteúdo da variável  
+  }
+
+  * Scope {
+    - Escopo determina a visibilidade de alguma varialvel no JS 
+      * Block statement {
+          
+          // vamos iniciar um bloco
+        { 
+          // aqui dentro é um bloco e posso colocar qualquer código
+          // aqui fechamos o bloco
+        }
+        O bloco, também criará um novo escopo. Chamamos de `block-scoped`
+
+
+      }
+        
+  }
 }
