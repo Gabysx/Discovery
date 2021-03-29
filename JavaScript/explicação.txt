@@ -344,7 +344,7 @@ Aula 4 - Praticando e avançando {
         student
       ]
 
-      console.log(students)
+      
 
     9. Coloque no console o valor da posição zero do Array acima 
 
@@ -364,7 +364,7 @@ Aula 4 - Praticando e avançando {
         john
       ]
 
-      students[1] = john
+      students[1] = john (outra forma)
       console.log(students)
 
     11. Sem rodar o código responda qual é a resposta do código abaixo e  por que? Após sua resposta, rode o código e veja se você acertou.
@@ -374,4 +374,155 @@ Aula 4 - Praticando e avançando {
 
       Resposta - Undefined 
   }
+}
+
+Aula 5 - Funções {
+  * Functions{
+    
+    // declaration - declaração da função 
+    // function statement
+
+    function  createPhhrases() {
+        // Criar um aplicativo de frases motivacionais 
+        console.log('Estudar é muito bom')
+        console.log('Paciência e percistencia')
+        console.log('Revisão é a mãe do aprendizado')
+    }
+
+    //execute , run, call, invoke
+    createPhhrases()
+
+    console.log('Fim do programa')
+  }
+
+  * Argumentos e parâmetros {
+    // function expression
+    // function anonymous 
+    // parametros (parameters)
+      const sum = function(number1, number2){
+      console.log(number1 + number2)
+      
+      sum(2,3) // argumentos - arguments
+  }
+
+  * Retornando valores dentro da função {
+
+    let total = 0
+    const sum = function(number1, number2){
+    let total = number2 + number1
+    // o segredo é o return
+    return total 
+    }
+
+    let number11 = 35
+    let number21 = 35
+    sum(number1, number2)
+
+    /* console.log(`O numero 1 é ${number1}`)
+    console.log(`O numero 2 é ${number2}`) */
+    console.log(`a soma é ${sum(number1, number2)}`)
+    console.log(total)
+  }
+
+  * Outra maneira de entender funçoes {
+    // Função é um liquidificador
+
+    function fazerSuco(fruta1, fruta2) {
+      return fruta1 + fruta2
+    }
+
+    const copo = fazerSuco('banana', 'maça')
+
+    console.log(copo)
+  }
+
+  * Function Scope {
+      // function scope 
+
+      let subject
+
+      function createThink(subject) {
+        subject = 'study'
+        return subject
+      }
+      console.log(subject)
+      createThink()
+      console.log(subject)
+  }
+  
+  * Function Hoisting {
+      // function hoisting
+
+    // por debaixo dos panos roda 
+    sayMyName()
+
+    function sayMyName() {
+      console.log("Gabys")
+    }
+
+    ***********************************
+
+    // por debaixo dos panos não roda por se tratar de const que não altera o seu estado  
+    sayMyName()
+    const sayMyName = function () {
+      console.log("Gabys")
+    }
+
+    **********************************
+
+    //por debaixo dos panos não roda por se tratar de const que não altera o seu estado 
+
+    var sayMyName = function sayMyName() {
+      console.log("Gabys")
+    }
+  }
+
+  * Arrow function {
+    // arrow function - Jeito mais facil de escrever as funções 
+
+    const sayMyName = (/*paramentros*/) => {
+    console.log('Gabys')
+    }
+  }
+
+  * Callback function {
+    // Callback function - é uma função que está passansdo de parametro para outra função 
+
+    function sayMyName(name){
+      console.log('antes de executar uma callback')
+      name()
+      console.log('Depois de executar uma callback')
+    }
+
+    sayMyName(
+      () => {
+        console.log('estou em uma callback')
+      }
+    )
+  }
+
+  * Funções construtora{ 
+    /*
+    Function() construtor
+
+    * expressão new
+    * criar um novo objeto 
+    * this keyword
+
+    */ 
+
+    function Person() {
+      this.name = name 
+      this.walk = function() {
+        return this.name + "andando"
+      }
+    }
+
+    const gabys = new Person("Gabys")
+    const joao = new Person("Joao")
+
+    console.log(gabys.walk)
+    console.log(joao.name)
+
+    }
 }
