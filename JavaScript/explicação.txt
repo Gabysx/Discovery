@@ -526,3 +526,147 @@ Aula 5 - Funções {
 
     }
 }
+
+Aula 6 - Manipulando Dados {
+
+  * ProtoType {
+    * prototype-based language
+    * prototype chain
+    * .__proto__ (encapsula o number ou string em objeto)
+  }
+
+  * Type conversion/ coersion {
+    Type conversion(typecasting)vs type coersion
+    *Alteração de um tipo de dado para outro tipo 
+    transformar string em numero ou numero em string de forma manual pois o Java script 
+    faz a conversão manual para string
+  }
+
+  * Strings em números {
+    // Manipulando String e Números
+    // Transformar uma String em Numeros e um Numero em String 
+
+    let string = "123"
+    console.log(Number(string))
+
+      VS
+
+    let number = 321
+    String(number)
+  }
+
+  * Contando caracteres e digitos {
+      // Manipulando String e Números 
+      // Contar quantos caracteres tem uma palavra e quantos digitos  tem um numero 
+    .lenght mostra caracteres tem um palavra, porém não funciona em numeros, 
+    a menos que vc converta a numero para string 
+      let word = "Paralelepipedo"
+      console.log(word.lenght)
+  }
+
+  * Casas decimais {
+    // Manipulando Strings e Números 
+
+    // Transformar um número quebrado com 2 casas decimais 
+    e trocar ponto por vígula 
+
+    let number = 389238.866398696
+    console.log(number.toFixed(2).replace(".", ",")) -> só funciona com o retorno em strings// com numero com precisa do replace 
+  }
+
+  *  Maiúsculas e Minúsculas {
+    // Manipulando Strings e Números 
+    // Transforme letras minúsculas e maiúsculas. Faça o contrário disso também 
+
+    let word = " Programar é muito bacana"
+    console.log(word.toUpperCase()) -> Transforma a frase com todas as letras maiusculas  
+    console.log(word.toLowerCase()) -> Transforma a frase com todas as letras maiusculas  
+  }
+
+  * Encontrando palavra em frase {
+    // Manipulando Strings
+
+    // verificar se o texto contém a palavra Amor
+      let phrase = "Eu quero viver o Amor!"
+      console.log(phrase.includes("Amor")) -> includes() -> é um método caseSensitive 
+  }
+
+  * Separando Strings {
+    //Manipulando Strings e Arrays 
+
+    // Separe um texto que contém espaços,em um novo array onde cada texto é uma posição do array.
+      let phrase = "Eu quero viver de Amor!"
+
+      let myArray = phrase.split(" ")
+      console.log(myArray) 
+
+      Depois disso, transforme o array em um texto e onde eram espaços, coloque _
+
+      let phraseWithUnderScore = myArray.join("_")
+      console.log(phraseWithUnderScore)
+  }
+
+  * Criando array com construtor {
+    // Manipulando Arrays 
+
+    // Criar Array com construtor 
+
+    let myArray = ['a','b','c'] -> versão normal
+    let myArray = new Array('a','b','c') -> construindo com construtor 
+  }
+
+  * Elementos do Array {
+    // Manipulando Arrays
+    //Contar Elementos de um array 
+    console.log([
+      "a",
+      {type:"array"},
+      function() {return "alo"}
+    ].lenght) -> conta quantos itens temos dentro do array 
+
+    console.log([
+      "a",
+      {type:"array"},
+      function() {return "alo"}
+    ][2]()) -> acessar a função  
+  }
+
+  * Strings para arrays {
+    //Manipulando Arrays
+    //Transformar uma cadeia de caracteres em elementos de um array
+
+    let word = "Manipulação"
+    console.log(Array.from(word)) ->  transforma a string ou numero em uma array 
+  }
+
+  * Manipulando Strings {
+    // Manipulando Arrays 
+
+    let techs = ["html","css","js"]
+
+    // adicionar um item no fim 
+      console.log(techs.push("node.js"))
+
+    // adicionar no começo
+    console.log(techs.unshift("node.js"))
+
+    // remover do fim 
+    console.log(techs.pop())
+
+    // remover do começo 
+    console.log(techs.shift())
+
+    // pegar somente alguns elementos do array
+      console.log(techs.slice(1,3))
+
+    // remover 1 ou mais items em qualquer posição do array 
+    console.log(techs.splice(1,2))
+
+    // encontrar a posição de um elemento array 
+    let index = techs.indexOf('css')
+
+
+
+
+  }
+}
