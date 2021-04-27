@@ -664,9 +664,298 @@ Aula 6 - Manipulando Dados {
 
     // encontrar a posição de um elemento array 
     let index = techs.indexOf('css')
+  }
+}
 
+Aula 7 - Expressões e Operadores {
+  * Expressões e Operadores {
+    /* Expressões e Operadores 
+      - Expressions -> Ponto e virgula é necessário as vezes 
+      - Operators
+        Binary
+        Unary
+        Ternary (false ? 'alo' : 'nada')
+    */
+  }
 
+  * NEW {
+    * left-hand-side expression
+    * criar um novo objeto
 
+    let name = new String('Gaby') -> faz com que a variável vire um objeto 
+
+    __proto__ verifica o objeto  
+  }
+
+  * Typeof  /  delete {
+
+    Operadores unários 
+    typeof -> fornece o tipo de dado 
+    delete -> deleta uma propriedade do objeto 
+  }
+
+  * Operadores Aritiméticos {
+
+    -  Multiplicação ->  (3 * 5)
+    -  Divisão -> (12 / 2)
+    -  Soma -> (10 + 20)
+    -  Subtração -> (5 - 1)
+    -  Resto da divisão -> (11 % 3) = 2
+    -  Incremento -> ++num ou num++
+    -  Decremento -> --num ou num--
+    -  Exponencial -> (3 ** 3) = 3*3*3
+    
+  } 
+
+  * Grouping Operator {
+    - Grouping Operator() -> altera a ordem da precedência da conta 
 
   }
+
+  * Operadores de comparação igual e diferente de {
+    // Operadores de comparação
+    //Irá comprar valores e retornar um Boolean com resposta á comparação
+
+    let one = 1
+    let one = 2
+    = atribuição simples  (recebe)
+    += atribuição + incremento
+    -= atribuição + decremento  
+    *= atribuição + multiplicação  
+    /= atribuição + divisão   
+    **= atribuição + exponenciação
+    %= atribuição + resto 
+
+    == igual a 
+    != diferente 
+    === estritamente igual (Compara os valores e os tipos dos elementos)
+    !== estritamente diferente (Compara os valores e os tipos dos elementos)
+    > Maior que
+    < Menor 
+    >= Maior igual 
+    <= Menor igual 
+
+  }
+
+  * Operadores lógicos {
+    AND && 
+    OR ||
+    NOT !
+  }
+
+  * Operador Condicional (ternário) {
+    // Dependendo da condição, nós receberemos valores diferentes 
+    // Condição então valor 1 se não valor 2 
+    // condition ? value1 : value2 
+
+    Exemplos 
+    let pao = true
+    let queijo = true 
+
+    const niceBreakFast = pao && queijo ? 'Café top' : 'Café Ruim'
+  }
+
+  * Operadores para String {
+    // comparison (comparação)
+      'a' == 'a'
+
+    // concatenation (concatenação)
+    //retorna a união de suas strings 
+    let alpha = 'alpha'
+    alpha + 'bet' + s 
+    alpha +='bet'(Atualizar a string)
+
+    Cuidado com o sinal de + pois o JS sempre concatena e retorna uma string mesmo sendo numero
+
+  }
+
+  * Falsy e Truthy {
+    Falsy
+    Quando um valor é considerado false em contextos onde um booleano é obrigatório (condicionais e loops )
+    false, 0, -0, "", null, Undefined, NaN
+  
+  Truthy
+
+  Quando um valor é considerado true em contextos onde um 
+  booleano é obrigatório (condicionais e loops )
+  true, {}, [], 1 , 3.23, "0", "false", -1, Infinity, -Infinity
+
+  }
+
+  * Precedência  dos operadores 
+
+  - Grouping  ()
+  - Negação e incremento  ! ++ --
+  - Multiplicação e Divisão  * /
+  - Adição e Subtração  - +
+  - Relacional < <= > >=
+  - Igualdade == != === !==
+  - AND &&
+  - OR  ||
+  - Condicional ? :
+  - Assignment (Atribuição)  = += -= *= /= **= %=
+}
+
+Aula 8 - condicionais e controle de fluxo {
+  * Controle de fluxo de aplicação {
+    // Control Flow 
+  }
+  * IF e ELSE {
+    //if (se) / else(se não) -> colocar a condição em uma variavel 
+    if (condição) {
+      return;
+    } else if (condição){
+
+    }else {
+      return;
+    }
+  }
+
+  *Switch {
+    //Switch
+    switch () {
+      case ...:
+      break
+      case ...:
+      break
+      default
+    }
+  }
+
+  * Throw e try/catch {
+    // Throw 
+    function sayMyName(name = '') {
+      if(name==='') {
+        throw 'Nome é obrigatório' -> ele para a execução da função 
+      }
+    }
+
+      //try ... catch 
+      try {
+        sayMyName()
+      } catch(e) {
+    }
+  }
+}
+
+Aula 9 - Estruturas de repetição {
+  * For {
+    //Estrutura de repetição
+      // For  (Para) - variavel ; condição; incrementar ou decrementar
+      controles 
+      * break - para a execução do loop
+      * continue - pula a execução do momento
+    for(let i = 0 ; i < 10 ; i++){
+
+    }
+  }
+
+  * While {
+    // while - enquanto 
+
+    let i = 0;
+    while(i<10){
+      console.log(i)
+      i++;
+    }
+  }
+
+  * For... of {
+    let name = 'Gabys'
+    let names = ['hahah','jbeobqo','ugeiooe']
+
+    for (let char of name){
+      console.log(char)
+    }
+  }
+
+  * For ...in {
+    let person = {
+      name:'Jonh',
+      age:30,
+      weight: 88.6
+    }
+    for(let property in person){
+      console.log(property)
+    }
+  }
+}
+
+Exercícios - 
+
+1- Transformar notas escolares {
+  Crie um algoritmo que transforme as notas do sistema numérico 
+  para sistema em caracteres do tipo A B C 
+
+  * de 90 para cima - A
+  * entre 80 - 89 - B
+  * entre 70 - 79 - C
+  * entre 60 - 69 - D
+  * menor que 59 - F
+
+  let nota ; 
+  let notaA = nota >= 90 && nota <= 100;
+  let notaB = nota <= 89 && nota >= 80;
+  let notaC = nota <= 79 && nota >= 70;
+  let notaD = nota <= 69 && nota >= 60;
+  
+  if(notaA){
+    console.log('Parabéns sua nota é A');
+  }else if (notaB ) {
+    console.log('Parabéns sua nota é B');
+  }else if (notaC ) {
+    console.log('Tenho certeza que vai se esforçar mais na próxima, sua nota é  C');
+  }else if (notaD) {
+    console.log('Precisa estudar mais,  sua nota é D');
+  }else {
+    console.log('Sua nota é F, está de recuperação');
+  }
+}
+
+2- Sistema de gastos familiar {
+  Crie um objeto que possuirá 2 propriedades, ambas do tipo Array:
+   * receitas: [];
+   * despesas: [];
+
+   Agora, crie uma função que irá calcular o total de receitas e despesas e irá mostrar 
+   uma mensagem se a familia está saldo positivo e negativo, seguido do valor do saldo. 
+
+   let family = {
+     receitas: [2500,3000],
+     despesas: [600,700,1500]
+   }
+
+    function sum(array) {
+      let total = 0;
+      for(let value of array){
+        total +=value
+      }
+      return total
+    }
+
+   function calculate() {
+     const calcReceita = sum(family.receitas)
+     const calcDespesas = sum(family.despesas)
+
+     const total = calcReceita - calcDespesas
+      let text = "Negativo"
+
+     if (total >= 0){
+       text = "positivo"
+     }
+
+     console.log(`Seu saldo é ${text}:  ${total.toFixed(2)} R$`)
+   }
+
+   calculate()
+}
+
+3- Celsius em fahrenheit {
+  Crie uma função que receba uma string em celsius ou fahrenheit e
+   faça a transformação de uma unidade para outra
+
+   C = (F -32) * 5/9
+   F = C * 9/5 + 32
+
+   function transform()
 }
